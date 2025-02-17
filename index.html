@@ -4,90 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hi/Max Real Estate</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .content {
-            border: 2px solid black;
-            padding: 10px;
-            margin: 10px 0;
-        }
-        .highlight {
-            background-color:;
-        }
+        body { font-family: Arial, sans-serif; }
+        .content-box { border: 2px solid black; padding: 15px; margin-bottom: 15px; }
+        .highlight { background-color: yellow; font-weight: bold; }
+        .image-placeholder { background: #ddd; width: 100%; height: 200px; display: flex; align-items: center; justify-content: center; }
     </style>
 </head>
 <body>
-    <header class="content highlight" id="contentA">
-        <h1>Hi/Max Real Estate & Houses</h1>
-        <p>Buying or selling a home is likely the largest and most important transaction you’ll ever make. That’s why so many trust Hi/MAX Real Estate, which according to Canadian consumers, has been voted #1 Most Trusted Real Estate Agents in Canada six times in a row.</p>
-        <a href="#">Let's get started</a>
-    </header>
-    
-    <aside class="content highlight" id="contentB">
-        <h2>Related Resources</h2>
-        <p>It's time to sell and find the next "one". Let us help you navigate the ins & outs of your next move.</p>
-        <ul>
-            <li><a href="#">Looking for an upgrade?</a></li>
-            <li><a href="#">Buying tips</a></li>
-            <li><a href="#">How much is your current home worth?</a></li>
-        </ul>
-    </aside>
-    
-    <section class="content highlight" id="contentC">
-        <h2>Why Choosing HI/Max</h2>
-        <p>Hi/Max agents go above and beyond and always strive to be the best they can be...</p>
-        <h3>Stats of HI/Max</h3>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Year</th>
-                    <th>Quebec</th>
-                    <th>Ontario</th>
-                    <th>Single House</th>
-                    <th>Condo</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>2021</td>
-                    <td>50</td>
-                    <td>100</td>
-                    <td>$500,00</td>
-                    <td>189,000</td>
-                </tr>
-                <tr>
-                    <td>2022</td>
-                    <td>100</td>
-                    <td>200</td>
-                    <td>$780,00</td>
-                    <td>240,000</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-    
-    <section class="content highlight" id="contentD">
-        <h2>More Resources on How to Choose the Right Agent</h2>
-    </section>
-    
-    <article class="content highlight" id="contentF">
-        <img src="https://github.com/boda0004/CST8914-lab6/blob/main/1.png?raw=true" alt="House for sale sign">
-        <h3><a href="#">What Are The Risks of Selling a Home Yourself?</a></h3>
-        <p>We’ve all seen the videos, read the stories, and gasped at the images of people who thought they could conquer a project...</p>
-    </article>
-    
-    <article class="content highlight" id="contentG">
-        <img src="https://github.com/boda0004/CST8914-lab6/blob/main/2.png?raw=true" alt="Real estate agent talking to client">
-        <h3><a href="#">7 Questions to Ask a Real Estate Agent Before You Commit</a></h3>
-        <p>According to research by the National Association of Realtors, there are considerable benefits to working with a real estate agent...</p>
-    </article>
-    
-    <article class="content highlight" id="contentH">
-        <img src="https://github.com/boda0004/CST8914-lab6/blob/main/3.png?raw=true" alt="Real estate agent in front of house">
-        <h3><a href="#">8 Reasons to Hire an Agent When Selling Your Home</a></h3>
-        <p>With all the many different moving parts involved in selling your home, here are eight very valid reasons...</p>
-    </article>
+    <div class="container">
+        <h1 class="text-center">Content to Markup</h1>
+        
+        <!-- Content A -->
+        <div class="content-box">
+            <h2 class="highlight">Content A</h2>
+            <p><strong>Hi/Max Real Estate & Houses</strong></p>
+            <p>Buying or selling a home is likely the largest and most important transaction you’ll ever make...</p>
+            <a href="#">Let's get started</a>
+        </div>
+        
+        <!-- Content B -->
+        <div class="content-box">
+            <h2 class="highlight">Content B</h2>
+            <p><strong>Related Resources</strong></p>
+            <ul>
+                <li><a href="#">Looking for an upgrade?</a></li>
+                <li><a href="#">Buying tips</a></li>
+                <li><a href="#">How much is your current home worth?</a></li>
+            </ul>
+        </div>
+        
+        <!-- Content C -->
+        <div class="content-box">
+            <h2 class="highlight">Content C</h2>
+            <p><strong>Why choosing Hi/Max</strong></p>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Quebec</th>
+                        <th>Ontario</th>
+                        <th>Single House</th>
+                        <th>Condo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2021</td>
+                        <td>50</td>
+                        <td>100</td>
+                        <td>$500,000</td>
+                        <td>$189,000</td>
+                    </tr>
+                    <tr>
+                        <td>2022</td>
+                        <td>100</td>
+                        <td>200</td>
+                        <td>$780,000</td>
+                        <td>$240,000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- Content D -->
+        <div class="content-box">
+            <h2 class="highlight">Content D</h2>
+            <p><strong>More Resources on How to Choose the Right Agent</strong></p>
+        </div>
+        
+        <div class="row">
+            <!-- Content F -->
+            <div class="col-md-4">
+                <div class="content-box">
+                    <h2 class="highlight">Content F</h2>
+                    <div class="image-placeholder"><img src="https://github.com/boda0004/CST8914-lab6/blob/main/1.png?raw=true" alt="House for sale sign"></div>
+                    <p><a href="#">What Are The Risks of Selling a Home Yourself?</a></p>
+                </div>
+            </div>
+            
+            <!-- Content G -->
+            <div class="col-md-4">
+                <div class="content-box">
+                    <h2 class="highlight">Content G</h2>
+                    <div class="image-placeholder"><img src="https://github.com/boda0004/CST8914-lab6/blob/main/2.png?raw=true" alt="Real estate agent talking to client"></div>
+                    <p><a href="#">7 Questions to Ask a Real Estate Agent Before You Commit</a></p>
+                </div>
+            </div>
+            
+            <!-- Content H -->
+            <div class="col-md-4">
+                <div class="content-box">
+                    <h2 class="highlight">Content H</h2>
+                    <div class="image-placeholder"><img src="https://github.com/boda0004/CST8914-lab6/blob/main/3.png?raw=true" alt="Real estate agent in front of house"></div>
+                    <p><a href="#">8 Reasons to Hire an Agent When Selling Your Home</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
