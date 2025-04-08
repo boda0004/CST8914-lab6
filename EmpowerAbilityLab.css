@@ -241,4 +241,41 @@ a.learn-more:focus {
   outline: none;
 }
 
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+.info-table th,
+.info-table td {
+  padding: 1.2rem;
+  border: 1px solid #ccc;
+  vertical-align: top;
+  text-align: left;
+}
+
+.info-table th {
+  background-color: #f0f0f0;
+  color: #003366;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+.info-table td p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.info-table ul {
+  padding-left: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.info-table a.learn-more {
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
 
