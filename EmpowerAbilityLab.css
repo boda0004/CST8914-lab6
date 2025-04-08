@@ -222,13 +222,16 @@ footer {
   }
 
 a.learn-more {
-  color: #ffffff; /* Default color for link on dark background */
-  text-decoration: underline;
+  color: #66ccff;               /* Light blue */
+  text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 a.learn-more:hover,
 a.learn-more:focus {
-  color: #ffd700; /* Yellow hover color for visibility */
+  color: #003366;               /* Dark blue on hover/focus */
+  text-decoration: underline;  /* Optional: underline on hover */
   outline: none;
 }
+
