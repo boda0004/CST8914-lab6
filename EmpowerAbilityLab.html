@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Empower Ability Labs</title>
+  <link rel="stylesheet" href="EmpowerAbilityLab.css" />
+</head>
+<body>
+
+  <!-- Navigation with Logo -->
+  <nav>
+    <div class="nav-container">
+      <img src="images/empowerabilitylabslogo.png" alt="Empower Ability Labs Logo" class="logo" />
+      <ul>
+        <li><a href="#home" onfocus="updateFocus('home')">Home</a></li>
+        <li><a href="#services" onfocus="updateFocus('services')">Services</a></li>
+        <li><a href="#schedule" onfocus="updateFocus('schedule')">Schedule a Call</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" tabindex="-1">
+    <h1>Welcome to Empower Ability Labs</h1>
+     <p>
+    Empower Ability Labs is a hub for learning and empathy-building. We are on a mission to foster understanding and promote inclusive digital experiences for all.
+    We offer a range of services designed to promote accessibility awareness, drive inclusivity, and enhance the user experience.
+    And help you find answers on <strong>How do people with disabilities use technology and navigate the digital world? What tools do they employ?</strong>
+  </p>
+  <button id="openModalBtn" class="btn-primary">Meet the Empower Community!</button>
+
+  <table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+    <thead style="background-color: #f0f0f0;">
+      <tr>
+        <th>Our Approach</th>
+        <th>Services</th>
+        <th>Testimonials</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          Empower Ability Labs utilizes a hands-on approach to raise awareness and promote empathy. Our immersive workshops and lab days provide participants with a unique opportunity to step into the shoes of individuals with disabilities and navigate the digital world.
+        </td>
+        <td>
+          Promote accessibility awareness and enhance the user experience.
+          <ul>
+            <li>Empathy lab days and workshops</li>
+            <li>Go beyond WCAG compliance!</li>
+            <li>Inspirational speakers.</li>
+          </ul>
+        </td>
+        <td>
+          Invite a speaker with disabilities to share their unique journey. This captivating addition to your upcoming event will offer insights that resonate, inspire, educate, and enrich your team’s understanding of inclusion.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+     <!-- Modal -->
+     <div id="communityModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+      <div class="modal-content" role="document" tabindex="-1">
+        <div class="modal-header">
+          <h2 id="modalTitle">Community Steering Committee</h2>
+          <button class="close-button" id="closeModalBtn" aria-label="Close dialog">×</button>
+        </div>
+        <div class="modal-body">
+          <p>
+            We get <strong>aha!</strong> moments from product managers who try our services for the first time. We offered lab days, workshops, and usability testing to organizations including:
+          </p>
+          <ul>
+            <li>McGill University</li>
+            <li>Walmart.ca</li>
+            <li>Apple.ca</li>
+            <li>Google.ca</li>
+            <li>Government of Canada</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" tabindex="-1">
+    <h2>Our Services</h2>
+    <img src="images/scheduleacall.png" alt="Collage of accessibility and usability workshops" class="service-img" />
+    <p>
+    Dedicated space or programs designed to cultivate empathy and understanding among individuals toward the challenges faced by people with disabilities in using technology and interacting with various environments.
+  </p>
+
+  <h3>Empathy Lab days and workshops</h3>
+  <p>
+    The lab days and workshops typically provide hands-on experiences, simulations, and interactions with assistive technologies, tools, and scenarios that replicate the obstacles individuals with disabilities encounter daily.
+  </p>
+
+  <h3>Inspirational speakers</h3>
+  <p>
+    Invite a speaker with disabilities to share their unique journey. This captivating addition to your upcoming event will offer insights that resonate, inspire, educate, and enrich your team’s collective understanding of inclusion.
+  </p>
+
+  <h3>Usability testing</h3>
+  <p>
+    Go beyond WCAG! Involve individuals with disabilities in usability testing to gather valuable insights for refining product strategy and identifying accessibility concerns at an early stage when solutions are more feasible and cost-effective. You have access to a diverse community of people with disabilities, who use various assistive technologies. With technical expertise ranging from novice to expert, our community can support your product lifecycle from user research, to design, to QA.
+  </p>
+  </section>
+
+  <!-- Schedule Section -->
+  <section id="schedule" tabindex="-1">
+    <h2>Schedule a Call</h2>
+      <img src="images/scheduleacall.png" alt="Person scheduling a call on a laptop" class="schedule-img" />
+  <p>
+    At Empower Ability Labs, we are dedicated to cultivating empathy and driving positive change through immersive experiences. Fill out the form below and we’ll get back to you as soon as we can to schedule a call with our sales team!
+  </p>
+
+    <form id="contactForm">
+      <label for="businessName">Business Name:</label>
+      <input type="text" id="businessName" name="businessName" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="email">Email (required):</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">What would you like to talk about?</label>
+      <select id="message" name="message" required>
+        <option value="">Select an option</option>
+        <option value="workshops">Awareness lab days and workshops</option>
+        <option value="speaker">Invite a speaker</option>
+        <option value="testing">Usability testing</option>
+      </select>
+
+      <label for="eventDetails">Tell us about your event:</label>
+      <textarea id="eventDetails" name="eventDetails" required></textarea>
+
+      <!-- Accessible Toggle Switch -->
+      <div class="toggle-container">
+        <div id="emailSwitch" class="toggle-switch" role="switch" tabindex="0" aria-checked="false"
+          onclick="toggleSwitch(this)" onkeydown="toggleSwitchKey(event, this)" aria-label="Receive email updates">
+          <div class="toggle-thumb"></div>
+        </div>
+        <label id="emailSwitchLabel">Receive email updates</label>
+      </div>
+
+      <button type="submit">Schedule a Call</button>
+    </form>
+  </section>
+
+  <!-- Screen reader live region -->
+  <div id="ariaAnnouncer" class="sr-only" aria-live="polite"></div>
+
+  <footer>
+    <p>© Empower Ability Labs Inc. All rights reserved.</p>
+  </footer>
+
+  <script src="EmpowerAbilityLab.js"></script>
+</body>
+</html>
