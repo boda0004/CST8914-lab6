@@ -83,3 +83,8 @@ function toggleSwitchKey(event, element) {
     toggleSwitch(element);
   }
 }
+
+function toggleMenu() {
+  const navLinks = document.getElementById("navLinks");
+  navLinks.classList.toggle("show");
+}
