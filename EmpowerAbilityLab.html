@@ -10,15 +10,23 @@
 
   <!-- Navigation with Logo -->
   <nav>
-    <div class="nav-container">
-      <img src="logo.png" alt="Empower Ability Labs Logo" class="logo" />
-      <ul>
-        <li><a href="#home" onfocus="updateFocus('home')" class="nav-menu">Home</a></li>
-        <li><a href="#services" onfocus="updateFocus('services')" class="nav-menu">Services</a></li>
-        <li><a href="#schedule" onfocus="updateFocus('schedule')" class="nav-menu">Schedule a Call</a></li>
-      </ul>
-    </div>
-  </nav>
+  <div class="nav-container">
+    <img src="logo.png" alt="Empower Ability Labs Logo" class="logo" />
+
+    <!-- Hamburger button for mobile -->
+    <button class="hamburger" aria-label="Toggle navigation" onclick="toggleMenu()">
+      ☰
+    </button>
+
+    <!-- Navigation Links -->
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" onfocus="updateFocus('home')" class="nav-menu">Home</a></li>
+      <li><a href="#services" onfocus="updateFocus('services')" class="nav-menu">Services</a></li>
+      <li><a href="#schedule" onfocus="updateFocus('schedule')" class="nav-menu">Schedule a Call</a></li>
+    </ul>
+  </div>
+</nav>
+
 
   <!-- Home Section -->
   <section id="home" tabindex="-1">
