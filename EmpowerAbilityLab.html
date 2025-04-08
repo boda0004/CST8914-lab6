@@ -131,13 +131,12 @@
       <label for="email">Email (required):</label>
       <input type="email" id="email" name="email" required>
 
-      <label for="message">What would you like to talk about?</label>
-      <select id="message" name="message" required>
-        <option value="">Select an option</option>
-        <option value="workshops">Awareness lab days and workshops</option>
-        <option value="speaker">Invite a speaker</option>
-        <option value="testing">Usability testing</option>
-      </select>
+      <fieldset>
+          <legend>What would you like to talk about?</legend>
+          <label><input type="radio" name="topic" value="workshops" required /> Workshops</label><br />
+          <label><input type="radio" name="topic" value="testing" /> Usability Testing</label><br />
+          <label><input type="radio" name="topic" value="awareness" /> Awareness Lab Days</label>
+        </fieldset>
 
       <label for="eventDetails">Tell us about your event:</label>
       <textarea id="eventDetails" name="eventDetails" required></textarea>
