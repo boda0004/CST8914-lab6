@@ -35,6 +35,15 @@ function toggleSwitchKey(event, element) {
   }
 }
 
+function toggleMenu() {
+  const navLinks = document.getElementById("navLinks");
+  const isExpanded = navLinks.classList.toggle("show");
+
+  // ARIA toggle for accessibility
+  const hamburger = document.querySelector('.hamburger');
+  hamburger.setAttribute('aria-expanded', isExpanded);
+}
+
 window.addEventListener("DOMContentLoaded", () => {
   const hash = window.location.hash.substring(1);
   if (hash) updateFocus(hash);
